@@ -39,6 +39,12 @@ const config = {
           400: "#858EAD",
         },
       },
+      backgroundImage: {
+        "primary-gradient":
+          "linear-gradient(232deg, rgba(255, 112, 0, 1) 0%, rgba(226, 153, 95, 1) 100%)",
+        "dark-gradient":
+          "linear-gradient(232deg, rgba(23, 28, 35, 0.41) 0%, rgba(19, 22, 28, 0.7) 100%)",
+      },
       keyframes: {
         "accordion-down": {
           from: { height: "0" },
