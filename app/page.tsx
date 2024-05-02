@@ -2,7 +2,7 @@ import { Typography } from "@/components/ui/typography";
 
 export default function Home() {
   return (
-    <main className="min-h-screen">
+    <main className="ml-[266px]">
       <Typography variant="h1" weight="bold">
         H1-Bold
       </Typography>

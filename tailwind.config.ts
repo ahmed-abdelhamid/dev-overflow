@@ -45,6 +45,9 @@ const config = {
         "dark-gradient":
           "linear-gradient(232deg, rgba(23, 28, 35, 0.41) 0%, rgba(19, 22, 28, 0.7) 100%)",
       },
+      boxShadow: {
+        "light-200": "10px 10px 20px 0px rgba(218, 213, 213, 0.10)",
+      },
       keyframes: {
         "accordion-down": {
           from: { height: "0" },
