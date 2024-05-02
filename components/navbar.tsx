@@ -1,5 +1,7 @@
 import Logo from "@/components/logo";
 import ModeToggle from "@/components/mode-toggle";
+import DesktopSidebar from "@/components/desktop-sidebar";
+import MobileSidebar from "./mobile-sidebar";
 
 const Navbar = () => {
   return (
@@ -8,6 +10,9 @@ const Navbar = () => {
       <div className="flex items-center gap-x-4">
         <ModeToggle />
         <div>Profile</div>
+
+        <MobileSidebar />
+        <DesktopSidebar />
       </div>
     </div>
   );

@@ -14,3 +14,16 @@ export const themes = [
     Icon: LaptopMinimal,
   },
 ];
+
+export const navLinks = [
+  {
+    label: "Home",
+    icon: "/assets/icons/home.svg",
+    href: "/",
+  },
+  {
+    label: "Community",
+    icon: "/assets/icons/users.svg",
+    href: "/community",
+  },
+];

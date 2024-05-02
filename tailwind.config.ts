@@ -48,6 +48,9 @@ const config = {
       boxShadow: {
         "light-200": "10px 10px 20px 0px rgba(218, 213, 213, 0.10)",
       },
+      fontFamily: {
+        mono: ["var(--font-space-grotesk)"],
+      },
       keyframes: {
         "accordion-down": {
           from: { height: "0" },

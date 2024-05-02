@@ -1,4 +1,5 @@
 import * as React from "react";
+import { Slot } from "@radix-ui/react-slot";
 import { cva, type VariantProps } from "class-variance-authority";
 
 import { cn } from "@/lib/utils";
@@ -32,13 +33,16 @@ const typographyVariants = cva("", {
 
 export interface TypographyProps
   extends React.HTMLAttributes<HTMLElement>,
-    VariantProps<typeof typographyVariants> {}
+    VariantProps<typeof typographyVariants> {
+  asChild?: boolean;
+}
 
 const Typography: React.FC<TypographyProps> = ({
   className,
   variant,
   weight,
   children,
+  asChild = false,
   ...props
 }) => {
   if (variant === "h1") {
@@ -85,10 +89,11 @@ const Typography: React.FC<TypographyProps> = ({
     );
   }
 
+  const Comp = asChild ? Slot : "div";
   return (
-    <div className={cn(typographyVariants({ variant, weight, className }))}>
+    <Comp className={cn(typographyVariants({ variant, weight, className }))}>
       {children}
-    </div>
+    </Comp>
   );
 };
 
